@@ -30,7 +30,7 @@ use File::Find;
 
 # See short history at end of module
 
-my $gVersion = "0.50000";
+my $gVersion = "0.51000";
 my $gWin = (-e "C://") ? 1 : 0;    # 1=Windows, 0=Linux/Unix
 
 
@@ -1473,6 +1473,7 @@ my %htabsize = (
    'KLOLOGEVTS'  => '6928',
    'KLOLOGFRX'   => '814',
    'KLOLOGFST'   => '916',
+   'KLOLOGPEVT'  => '6928',
    'KLOPOBJST'   => '360',
    'KLOTHPLST'   => '96',
    'KLZCPU'      => '136',
@@ -1617,6 +1618,7 @@ my %htabsize = (
    'KNONCOECNA'  => '132',
    'KNONCOECNC'  => '152',
    'KNONCOECNE'  => '164',
+   'KNONCOECNI'  => '352',
    'KNONCOECNG'  => '268',
    'KNONCOECNI'  => '352',
    'KNONCOECNK'  => '379',
@@ -4493,3 +4495,4 @@ print OH "Total Time=$total_time ms\n";
 close OH;
 exit 0;
 # 0.50000  - starting point
+# 0.51000  - Correct Titles
